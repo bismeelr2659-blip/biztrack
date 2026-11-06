@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --color-navy: #142B4A;
+  --color-teal: #0D9488;
+  --color-teal-hover: #0F766E;
+  --color-page-bg: #F4EFEE;
+  --color-card-bg: #FFFFFF;
+}
+
+/* User Specified Theme Styles */
+body {
+  background-color: #F4EFEE;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  color: #0F172A;
+}
+
+.card {
+  background-color: #FFFFFF;
+}
+
+.btn-primary {
+  background-color: #0D9488;
+  color: #FFFFFF;
+}
+
+.sidebar {
+  background-color: #142B4A;
+}
+
+@layer base {
+  .font-mono, [data-tabular="true"] {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  /* Ensure printable modal content takes full page without clipping or overlays */
+  div[role="dialog"] {
+    border: none !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  aside, nav {
+    display: none !important;
+  }
+}

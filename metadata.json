@@ -1,0 +1,8 @@
+{
+  "name": "Remix BizTrack - Freelancer \u0026 Small Business SaaS",
+  "description": "Comprehensive SaaS platform for freelancers and small businesses to manage clients, track time, generate invoices, record payments, and analyze financial performance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
